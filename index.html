@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>ZEN</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/img/logo1.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="">INICIO</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="pages/portfolio.html">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="inputColor" onclick="invert()">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <main>
+        <div class="hero">
+            <video autoplay="" loop="" src="assets/video/hero.mp4"></video>
+        </div>
+        <img src="assets/img/separador.png" alt="separador" id="separador">
+        <section class="quienes-somos">
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <div class="integrantes">
+                <div class="integrante">
+                    <img src="assets/img/david-roldan.png" alt="" id="imgdavid">
+                    <img src="assets/img/david-roldan-2.png" alt="" class="hide" id="imgdavid2">
+                    <h4>David Roldán</h4>
+                    <p>Animador</p>
+                </div>
+                <div class="integrante">
+                    <img src="assets/img/juan-segura.png" alt="" id="imgjuans">
+                    <img src="assets/img/juan-segura-2.png" alt="" class="hide" id="imgjuans2">
+                    <h4>Juan Segura</h4>
+                    <p>Branding y Diseño Web</p>
+                </div>
+            </div>
+            <div class="integrantes2">
+                <div class="integrante">
+                    <img src="assets/img/juan-palacios.png" alt="" id="imgjuanp">
+                    <img src="assets/img/juan-palacios-2.png" alt="" class="hide" id="imgjuanp2">
+                    <h4>Juan Palacios</h4>
+                    <p>3D Artist</p>
+                </div>
+                <div class="integrante">
+                    <img src="assets/img/juanita-romanello.png" alt="" id="imgjuani">
+                    <img src="assets/img/juanita-romanello-2.png" alt="" class="hide" id="imgjuani2">
+                    <h4>Juanita Romanello</h4>
+                    <p>Programadora</p>
+                </div>
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+            <div class="fila">
+                <div class="servicio">
+                    <img src="assets/img/modelado3d.png" alt="">
+                    <p>MODELADO 3D</p>
+                </div>
+                <div class="servicio">
+                    <img src="assets/img/motiongraphics.png" alt="">
+                    <p>MOTION GRAPHICS</p>
+                </div>
+                <div class="servicio">
+                    <img src="assets/img/ilustracion.png" alt="">
+                    <p>ILUSTRACIÓN</p>
+                </div>
+            </div>
+            <div class="fila2">
+                <div class="servicio">
+                    <img src="assets/img/vfx.png" alt="">
+                    <p>VFX</p>
+                </div>
+                <div class="servicio">
+                    <img src="assets/img/branding.png" alt="">
+                    <p>BRANDING</p>
+                </div>
+                <div class="servicio">
+                    <img src="assets/img/diseñoweb.png" alt="">
+                    <p>DISEÑO WEB</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <div class="portfolio-container">
+                <img src="assets/img/portfolio1.jpg" alt="" class="noInvertImgs">
+                <img src="assets/img/portfolio1.jpg" alt="" class="noInvertImgs">
+                <img src="assets/img/portfolio1.jpg" alt="" class="noInvertImgs">
+                <img src="assets/img/portfolio1.jpg" alt="" class="noInvertImgs">
+                <img src="assets/img/portfolio1.jpg" alt="" class="noInvertImgs">
+                <img src="assets/img/portfolio1.jpg" alt="" class="noInvertImgs">
+            </div>
+            <button class="portfolio-btn"><a href="">VER MÁS</a></button>
+        </section>
+        <img src="assets/img/separador.png" alt="separador" id="separador">
+        <section class="contact" id="contact">
+            <img src="assets/img/square1.png" alt="" id="square1">
+            <img src="assets/img/square2.png" alt="" id="square2">
+            <div class="blue-container"></div>
+            <div class="pink-container"></div>
+            <div class="gray-container">
+                <h2>¡CONTACTANOS!</h2>
+                <div class="inputs1">
+                    <input type="text" placeholder="NOMBRE">
+                    <input type="text" placeholder="EMAIL">
+                </div>
+                <div class="inputs2">
+                    <input type="text" placeholder="MENSAJE">
+                </div>
+                <button class="portfolio-btn"><a href="">ENVIAR</a></button>
+            </div>
+            <div class="spacer"></div>
+        </section>
+    </main>
+</body>
+</html>

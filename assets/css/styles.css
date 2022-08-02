@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap');
+
+html{
+  scroll-behavior: smooth; 
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.invertColor{
+  filter: invert(1);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background-color: #111111;
+  overflow-x: hidden;
+}
+
+/* NAV */
+
+header{
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: flex-end;
+    padding: .6rem;
+}
+
+ul{
+    list-style: none;
+    padding: 1em 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    padding: 0 .4em;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: .2em;
+    font-family: 'vcr_osd_monoregular';
+    font-weight: 400;
+}
+
+ul li a:hover{
+  color: #ff00f9;
+}
+
+.logo{
+    margin-right: auto;
+    padding-left: 4em;
+    align-self: center;
+}
+
+/* TOGGLE */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin: .7em .8em;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+  }
+  
+  
+  input:checked + .slider:before {
+    background-color: #FFF;
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* HERO */
+
+
+.hero{
+  margin-bottom: -20px;
+}
+
+.hero video{
+    width: 100vw;
+}
+
+
+#separador{
+  position: relative;
+  z-index: 30;
+  width: 100vw;
+}
+
+/* QUIENES SOMOS */
+
+.quienes-somos{
+  background-image: url(/img/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
+  padding-bottom: 50px;
+}
+
+.quienes-somos h2{
+  padding: 100px 0 60px 0;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'vcr_osd_monoregular';
+  letter-spacing: 2px;
+}
+
+.integrantes{
+  display: flex;
+  gap: 300px;
+  margin-right: 300px;
+}
+
+.integrantes2{
+  display: flex;
+  gap: 300px;
+  margin-bottom: 40px;
+  margin-left: 300px;
+}
+
+.integrante{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.integrante img{
+  width: 230px;
+}
+
+.integrante h4{
+  width: 250px;
+  color: #FFF;
+  font-size: 20px;
+  margin: 15px 0;
+  font-family: 'vcr_osd_monoregular';
+  font-weight: 400;
+
+}
+
+.integrante p{
+  width: 250px;
+  color: #FFF;
+  font-size: 18px;
+  font-family: 'vcr_osd_monoregular';
+}
+
+/* SERVICIOS */
+
+.servicios{
+  background-image: url(../img/trama.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fila{
+  display: flex;
+  margin: 40px 0 20px 0;
+  gap: 200px;
+}
+
+.fila2{
+  display: flex;
+  margin: 20px 0 40px 0;
+  gap: 250px;
+}
+
+.servicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio img{
+  width: 100px;
+}
+
+.servicio p{
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: 'vcr_osd_monoregular';
+  letter-spacing: 1px;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio{
+  background-image: url(../img/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.portfolio h2{
+  padding: 100px 0 60px 0;
+  color: #FFF;
+  font-size: 30px;
+  font-family: 'vcr_osd_monoregular';
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.portfolio-container{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(2,200px);
+  padding-bottom: 40px;
+}
+
+.portfolio-btn{
+  background-color: white;
+  padding: 5px 20px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  border-right: 5px solid #11ffff;
+  border-left: 5px solid #ff00f9;
+}
+
+.portfolio-btn a{
+  text-decoration: none;
+  font-family: 'vcr_osd_monoregular';
+  font-size: 16px;
+  color: #000;
+}
+
+/* CONTACTO */
+
+.contact{
+  position: relative;
+  margin-top: -15px;
+  background-image: url(../img/trama.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue-container{
+  margin: 70px 0 0 20px; 
+  z-index: 2;
+  position: absolute; 
+  background-color: #11ffff;
+  width: 900px;
+  height: 550px;
+}
+
+.pink-container{
+  margin: 90px 20px 50px 0;
+  z-index: 3;
+  position: absolute;
+  background-color: #ff00f9;
+  width: 900px;
+  height: 550px;
+}
+
+.gray-container{
+  z-index: 4;
+  position: absolute;
+  margin: 80px;
+  width: 900px;
+  height: 550px;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2{
+  padding: 60px 0 40px 0;
+  color: #FFF;
+  font-size: 30px;
+  font-family: 'vcr_osd_monoregular';
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.contact input{
+  padding: 5px 30px;
+}
+
+.contact input::placeholder{
+  color: #000;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.inputs1 input:first-child{
+  margin-right: 40px;
+}
+
+.inputs2 input{
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 510px;
+  padding-top: 10px;
+  padding-bottom: 200px;
+}
+
+#square1{
+  margin-top: 80px;
+  width: 300px;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  top: 100;
+}
+
+#square2{
+  margin-top: 80px;
+  width: 300px;
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  top: 50;
+}
+
+/* PORTFOLIO PAGE */
+
+.hero-portfolio{
+  background-image: url(../img/background3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-portfolio h1{
+  padding-top: 100px;
+  color: #ffff;
+  font-family: 'vcr_osd_monoregular';
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 40px
+}
+
