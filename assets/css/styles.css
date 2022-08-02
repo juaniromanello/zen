@@ -149,7 +149,7 @@ ul li a:hover{
 /* QUIENES SOMOS */
 
 .quienes-somos{
-  background-image: url(/img/background1.jpg);
+  background-image: url(../img/background1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
