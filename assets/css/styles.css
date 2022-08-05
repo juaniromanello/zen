@@ -278,6 +278,10 @@ ul li a:hover{
   padding-bottom: 40px;
 }
 
+.portfolio-container img{
+  width: 200px;
+}
+
 .portfolio-btn{
   background-color: white;
   padding: 5px 20px;
@@ -406,39 +410,13 @@ ul li a:hover{
   font-family: 'vcr_osd_monoregular';
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 40px
+  font-size: 45px
 }
 
-/* VFX PAGE */
-
-.container-portfolio{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.portfolio-menu{
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio-content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.portfolio-content video{
-  width: 600px;
-}
-
-#small-video{
-  width: 400px;
-}
 
 .portfolio-btn-p{
+  margin-right: 15px;
+  margin-left: 15px;
   background-color: #3333;
   padding: 5px 20px;
   margin-bottom: 50px;
@@ -453,4 +431,153 @@ ul li a:hover{
   font-size: 16px;
   color: #fff;
 }
+
+
+/* MODELADO 3D */
+
+.container-portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/background-pages.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-menu{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-menu2{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.portal-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-container img{
+  width: 30vw;
+}
+
+.portal-container2, .portal-container3, .portal-container4, .portal-container2-1, .portal-container3-1, .portal-container5, .portal-container2-2{
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.portal-container2 video{
+  width: 30vw;
+}
+
+.modelado1, .modelado2, .modelado3, .modelado4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-title{
+  color: white;
+  font-family: 'vcr_osd_monoregular';
+  font-size: 24px;
+  font-weight: 400;
+  padding: 60px 0 30px 0;
+}
+
+.portfolio-p{
+  color: rgb(167, 167, 167);
+  font-family: 'vcr_osd_monoregular';
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.portal-container2 video{
+  width: 30vw;
+}
+
+.portal-container2-1 video{
+  width: 30vw;
+  height: 30vh;
+}
+
+.portal-container2-1 img{
+  width: 30vw;
+  height: 30vh;
+}
+
+.portal-container2-2 img{
+  width: 30vw;
+}
+
+.portal-container3-1 img{
+  width: 30vw;
+  height: 30vh;
+}
+
+
+.portal-container3-1 video{
+  width: 30vw;
+  height: 30vh;
+}
+
+.portal-container3 video{
+  width: 30vw;
+}
+
+.portal-container4 video{
+  width: 30vw;
+}
+
+.portfolio-diseño img{
+  width: 20vw;
+}
+
+.portfolio-diseño video{
+  width: 20.8vw;
+}
+
+.portfolio-diseño-il{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.portfolio-diseño-il img{
+  width: 20vw;
+}
+
+.logotipos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.paddingb{
+  padding-bottom: 60px;
+}
+
+.webbtn{
+  margin-top: 20px;
+}
+
+
 
